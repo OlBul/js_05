@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  margin: 50px auto;
+  padding: 0 20px;
+  height: 500px;
+}
+
+.slides {
+  max-width: 1220px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.slides__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -9999;
+}
+
+.slides__item.active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.slides__item {
+  background-color: aqua;
+
+}
+
+.slides__item:nth-child(1) {
+  background-color: brown;
+  background: url('../img/Depositphotos_12802876_m-2015-e1500440181184.jpg')no-repeat;
+  background-size: cover;
+}
+
+.slides__item:nth-child(2) {
+  background: url('../img/dnipro.jpg')no-repeat;
+  background-color: blue;
+  background-size: cover;
+}
+
+.slides__item:nth-child(3) {
+  background-color: blueviolet;
+  background: url('../img/odessa.jpg')no-repeat;
+  background-size: cover;
+}
+
+.slides__item:nth-child(4) {
+  background-color: tomato;
+  background: url('../img/kharkov.jpg')no-repeat;
+  background-size: cover;
+}
+
+.slides__item:nth-child(5) {
+  background-color: yellowgreen;
+  background: url('../img/nikolaev.jpg')no-repeat;
+  background-size: cover;
+}
+
+.indicators .active {}
+
+.indicators {
+  align-items: flex-start;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.indicators__item {
+  background-color: azure;
+  display: block;
+  width: 30px;
+  height: 2px;
+  padding: 5px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.controls__item {
+  background-color: aquamarine;
+  border: solid 1px black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
