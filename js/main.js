@@ -113,14 +113,13 @@ function setListener() {
 }
 
 
-function createCarousel(n = 5) {
-  //createContainer();
+function createCarousel(count = 5) {
   container = document.querySelector('#carousel');
-  createSlides(n);
-  createIndicators(n);
+  createSlides(count);
+  createIndicators(count);
   createControls();
   createStyle();
   setListener();
 }
 
-createCarousel(5);
+createCarousel(4);
